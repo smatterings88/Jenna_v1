@@ -685,7 +685,7 @@ app.post('/call-status', async (req, res) => {
         case 'no-answer':
             console.log(`Call ${callSid} was not answered`);
             try {
-                const tag = encodeURIComponent('jenna _> call-no-answer');
+                const tag = encodeURIComponent('jenna -> call-no-answer');
                 const formattedPhone = formatPhoneNumberForTagging(phoneNumber || to);
                 const tagUrl = `https://tag-ghl-jenna.onrender.com/api/contacts?clientName=${encodeURIComponent(clientName)}&phoneNumber=${formattedPhone}&tag=${tag}`;
                 
