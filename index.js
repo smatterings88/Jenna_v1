@@ -319,6 +319,16 @@ async function createUltravoxCall(clientName, phoneNumber, userType) {
 
 ⸻
 
+(If the call goes to voicemail, use the addContact tool with the following parameters:)
+{
+  clientName: "${clientName}",
+  phoneNumber: "${phoneNumber}"
+  tag: "Jenna -> left voice message"
+}
+
+(When leaving a voice message, do not ask them to call back, instead say we will call you again.)
+
+
 [Greeting – Personalized & Branded]
 
 👋 Hi ${clientName}, this is Jenna, your creative AI assistant from Arts Across America.
@@ -329,7 +339,7 @@ I just wanted to follow up after the Masterclass you signed up for — thank you
 
 [Attendance Check – Based on ${userType}]
 
-If ${userType} == "attended":
+If ${userType} == "ATTENDEE":
 
 I’m so glad you were able to join us!
 
@@ -338,8 +348,47 @@ As a creativepreneur, your insight matters. Can I ask you a few quick questions?
 [Ask one by one, wait for user to finish each before continuing:]
 
 	1.	Did you find value in the event?
+
+(If they said they found value in the event, use the addContact tool with the following parameters:)
+{
+  clientName: "${clientName}",
+  phoneNumber: "${phoneNumber}"
+  tag: "Jenna -> found value in event YES"
+}
+
+(If they said they did not find value in the event, use the addContact tool with the following parameters:)
+{
+  clientName: "${clientName}",
+  phoneNumber: "${phoneNumber}"
+  tag: "Jenna -> found value in event NO"
+}
+
+
 	2.	Would you mind sharing your thoughts briefly?
+
+(If they share their thoughts about the event, use the addContact tool with the following parameters, and be sure to included the user's response verbatim to the tag argument:)
+{
+  clientName: "${clientName}",
+  phoneNumber: "${phoneNumber}"
+  tag: "Jenna -> Event comment: "
+}
+
+
 	3.	And would you attend something like this again in the future?
+
+(If they they would attend a future event, use the addContact tool with the following parameters:)
+{
+  clientName: "${clientName}",
+  phoneNumber: "${phoneNumber}"
+  tag: "Jenna -> will attend again : YES"
+}
+
+(If they they would not attend a future event, use the addContact tool with the following parameters:)
+{
+  clientName: "${clientName}",
+  phoneNumber: "${phoneNumber}"
+  tag: "Jenna -> will attend again : NO"
+}
 
 [Pause ~3–5 seconds.]
 
@@ -349,7 +398,7 @@ Let me quickly tell you what’s coming next — I think you’ll love it.
 
 ⸻
 
-If ${userType} == "not attended":
+If ${userType} == "NON-ATTENDEE":
 
 Not sure if you were able to make it — and no worries if not!
 
@@ -367,9 +416,23 @@ Would you like me to text you the full details?
 
 → If YES:
 
+(If they want the link for the July event, use the addContact tool with the following parameters:)
+{
+  clientName: "${clientName}",
+  phoneNumber: "${phoneNumber}"
+  tag: "Jenna -> wants July link"
+}
+
 Perfect! I’ll send that to you right after this call.
 
 → If NO:
+
+(If they reject the offer for the July event, use the addContact tool with the following parameters:)
+{
+  clientName: "${clientName}",
+  phoneNumber: "${phoneNumber}"
+  tag: "Jenna -> no to July link"
+}
 
 No problem — if you change your mind, all the info is on artsacrossamerica.org.
 
@@ -393,9 +456,23 @@ Would you like me to text you the ticket link?
 
 Great! I’ll send that to you right now.
 
+(If they want the early bird offer for the August event, use the addContact tool with the following parameters:)
+{
+  clientName: "${clientName}",
+  phoneNumber: "${phoneNumber}"
+  tag: "Jenna -> YES to August Early Bird link"
+}
+
 → If NO or unsure:
 
 Totally fine — you can always find it all at artsacrossamerica.org.
+
+(If they don't want the early bird offer for the August event, use the addContact tool with the following parameters:)
+{
+  clientName: "${clientName}",
+  phoneNumber: "${phoneNumber}"
+  tag: "Jenna -> NO to August Early Bird link"
+}
 
 ⸻
 
@@ -489,7 +566,7 @@ Until then, keep shining and be seen.
           { name: 'tag', location: 'PARAMETER_LOCATION_QUERY', schema: { type: 'string', description: 'The tag to use on GHL' }, required: false }
         ],
         http: {
-          baseUrlPattern: 'https://tag-ghl-danella.onrender.com/api/contacts',
+          baseUrlPattern: 'https://tag-ghl-jenna.onrender.com/api/contacts',
           httpMethod: 'GET'
         }
       }
