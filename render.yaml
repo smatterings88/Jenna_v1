@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: ultravox-twilio-caller
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: TWILIO_ACCOUNT_SID
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: TWILIO_PHONE_NUMBER
+        sync: false
+      - key: ULTRAVOX_API_KEY
+        sync: false
+      - key: GHL_API_KEY
+        sync: false
+      - key: GHL_LOCATION_ID
+        sync: false
+      - key: PORT
+        value: 10000
+    healthCheckPath: /health
+    autoDeploy: true
