@@ -666,9 +666,9 @@ app.post('/call-status', async (req, res) => {
         case 'busy':
             console.log(`Call ${callSid} was busy`);
             try {
-                const tag = encodeURIComponent('events → ve0525flash-call-busy');
+                const tag = encodeURIComponent('jenna -> call-busy');
                 const formattedPhone = formatPhoneNumberForTagging(phoneNumber || to);
-                const tagUrl = `https://tag-ghl-danella.onrender.com/api/contacts?clientName=${encodeURIComponent(clientName)}&phoneNumber=${formattedPhone}&tag=${tag}`;
+                const tagUrl = `https://tag-ghl-jenna.onrender.com/api/contacts?clientName=${encodeURIComponent(clientName)}&phoneNumber=${formattedPhone}&tag=${tag}`;
                 
                 console.log('Tagging busy contact with URL:', tagUrl);
                 
@@ -685,9 +685,9 @@ app.post('/call-status', async (req, res) => {
         case 'no-answer':
             console.log(`Call ${callSid} was not answered`);
             try {
-                const tag = encodeURIComponent('events → ve0525flash-call-no-answer');
+                const tag = encodeURIComponent('jenna _> call-no-answer');
                 const formattedPhone = formatPhoneNumberForTagging(phoneNumber || to);
-                const tagUrl = `https://tag-ghl-danella.onrender.com/api/contacts?clientName=${encodeURIComponent(clientName)}&phoneNumber=${formattedPhone}&tag=${tag}`;
+                const tagUrl = `https://tag-ghl-jenna.onrender.com/api/contacts?clientName=${encodeURIComponent(clientName)}&phoneNumber=${formattedPhone}&tag=${tag}`;
                 
                 console.log('Tagging no-answer contact with URL:', tagUrl);
                 
