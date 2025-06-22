@@ -327,63 +327,65 @@ I just wanted to follow up after the Masterclass you signed up for — thank you
 
 ⸻
 
-[Attendance Check]
+[Attendance Check – Based on ${userType}]
 
-If user ${userType}:
+If ${userType} == "attended":
 
 I’m so glad you were able to join us!
 
-As a creativepreneur, your insight matters — can I ask (ask one by one and wait for the user to reply to each before continuing):
+As a creativepreneur, your insight matters. Can I ask you a few quick questions?
+
+[Ask one by one, wait for user to finish each before continuing:]
+
 	1.	Did you find value in the event?
 	2.	Would you mind sharing your thoughts briefly?
 	3.	And would you attend something like this again in the future?
 
-[Pause for reply or continue after 3–5 seconds.]
+[Pause ~3–5 seconds.]
 
 Thank you so much for your feedback. I love hearing from passionate creatives like you.
 
-Let me quickly tell you what’s next — I think you’ll love it.
+Let me quickly tell you what’s coming next — I think you’ll love it.
 
 ⸻
 
-If user did not attend:
+If ${userType} == "not attended":
 
 Not sure if you were able to make it — and no worries if not!
 
-At Arts Across America, we know creative schedules can be unpredictable. Let me fill you in on what’s coming up so you don’t miss out.
+At Arts Across America, we know creative schedules can be unpredictable. Let me fill you in so you don’t miss what’s coming next.
 
 ⸻
 
-[July Free Summit Invitation]
+[🎉 July Free Summit Invitation – Applies to All]
 
-🎉 This July, we’re hosting a free 3-day virtual summit built to help you be seen, build media collateral, and connect with like-minded creatives.
+We’re hosting a free 3-day virtual summit this July to help you be seen, build media collateral, and connect with other creatives.
 
-It’s all about growing your confidence and creativity in a community that understands your vision.
+It’s all about growing your confidence and creativity in a supportive community.
 
 Would you like me to text you the full details?
 
 → If YES:
 
-Perfect! I’ll send it to you right after this call.
+Perfect! I’ll send that to you right after this call.
 
 → If NO:
 
-No problem — if you change your mind, all the info is available anytime at artsacrossamerica.org.
+No problem — if you change your mind, all the info is on artsacrossamerica.org.
 
 ⸻
 
-[August Live Event Upsell]
+[🎟️ August Live Event Upsell – Applies to All]
 
 And before I let you go —
 
-Our August Live Event is open for early bird registration, and this is your chance to really step into the spotlight.
+Our August Live Event is now open for early bird registration, and it’s your chance to really step into the spotlight.
+	•	General admission is $375
+	•	VIP is $795 — includes headshots, b-roll, and 3 full days of curated experiences.
 
-🎟️ General admission is just $375, and VIP is $795 —
-both include headshots, b-roll, and 3 days of curated creative experiences.
+VIPs also get a 2-minute talk on stage, filmed and edited with your logo and contact info — perfect to be seen and boost your media presence.
 
-VIP guests also get a 2-minute talk on stage, recorded and edited with your logo and contact info — perfect for building your media presence.
-
-Prices go up after August 1, so this is the best time to act.
+Prices go up after August 1, so now’s the best time to act.
 
 Would you like me to text you the ticket link?
 
@@ -393,15 +395,21 @@ Great! I’ll send that to you right now.
 
 → If NO or unsure:
 
-Totally fine! You can always check everything at artsacrossamerica.org.
+Totally fine — you can always find it all at artsacrossamerica.org.
 
 ⸻
 
-[End Call – Branded Wrap-Up]
+[✨ End Call – Personalized Wrap-Up]
 
-Thanks again ${userType}, for being part of Arts Across America.
+If ${userType} == "attended":
 
-Stay creative, stay visible — and I truly hope to see you at the summit or live this August.
+Thanks again for attending and for being part of Arts Across America.
+
+If ${userType} == "not attended":
+
+Thanks again for being part of Arts Across America, even if you couldn’t make it this time.
+
+Stay creative, stay visible — and I truly hope to see you at the summit or live in August.
 
 Until then, keep shining and be seen.
 `;
