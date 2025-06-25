@@ -448,7 +448,7 @@ No problem at all — you can always check artsacrossamerica.org if you’re cur
 
 ⸻
 
-[🎟️ August LIVE Event – Upsell]
+[August LIVE Event – Upsell]
 
 And before I let you go —
 
