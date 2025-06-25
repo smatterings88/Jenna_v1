@@ -349,7 +349,7 @@ I’d love to ask you just a few quick questions. Ready?
 
 [Pause for user response]
 
-JENNA: “Hang on a sec while I save that…”
+After the user responds, say “Hang on a sec while I save that…”
 
 → If YES:
 {
@@ -371,7 +371,7 @@ JENNA: “Hang on a sec while I save that…”
 
 [Pause for user response]
 
-JENNA: “Got it — let me make a note of that…”
+After the user responds, say “Got it — let me make a note of that…”
 
 → If shared:
 {
@@ -386,7 +386,7 @@ JENNA: “Got it — let me make a note of that…”
 
 [Pause for user response]
 
-JENNA: “Thanks — saving your answer now…”
+After the user responds, say “Thanks — saving your answer now…”
 
 → If YES:
 {
@@ -428,7 +428,7 @@ Want me to text you the full details?
 
 [Pause for response]
 
-JENNA: “Perfect — let me lock that in for you…”
+After the user responds, say “Perfect — let me lock that in for you…”
 
 → If YES:
 {
@@ -452,7 +452,7 @@ No problem at all — you can always check artsacrossamerica.org if you’re cur
 
 And before I let you go —
 
-Our **August LIVE event** — that’s *LIVE* like “live on stage” — is now open for early bird registration.
+Our **August LIVE event** is now open for early bird registration.
 
 Quick rundown:
   • General admission is $375  
@@ -464,7 +464,7 @@ Want me to send you the ticket link?
 
 [Pause for response]
 
-JENNA: “Great — I’ll get that sent your way…”
+After the user responds, say “Great — I’ll get that sent your way…”
 
 → If YES:
 {
