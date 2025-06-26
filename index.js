@@ -455,8 +455,8 @@ And before I let you go —
 Our **August LIVE event** is now open for early bird registration.
 
 Quick rundown:
-  • General admission is $375  
-  • VIP is $795 — includes headshots, b-roll, and 3 full days of curated experiences
+  • General admission is three hundred seventy five dollars
+  • VIP is seven hundred ninety five dollars — includes headshots, b-roll, and 3 full days of curated experiences
 
 VIPs also get a 2-minute on-stage talk, filmed and edited with your logo and contact info — super helpful for media presence.
 
