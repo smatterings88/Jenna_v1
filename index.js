@@ -418,6 +418,13 @@ No worries if you missed it — creative life gets busy!
 
 Let me fill you in real quick so you’re in the loop.
 
+At the ShowBusiness event, attendees walked away with three powerful takeaways:
+Clarity on their next steps in building a creative career or business,
+Actionable tips and tools in marketing, AI, and mindset they could implement immediately, and
+Renewed confidence to show up, stand out, and grow as a CreativePreneur.
+
+Also...
+
 ⸻
 
 [🎉 July Free Summit – Invite for Everyone]
