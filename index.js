@@ -322,7 +322,7 @@ async function createUltravoxCall(clientName, phoneNumber, userType) {
 {
   clientName: "${clientName}",
   phoneNumber: "${phoneNumber}"
-  tag: "Jenna -> left voice message"
+  tag: "jenna -> left voice message"
 }
 
 (When leaving a voice message, do not ask them to call back, instead say we will call you again.)
@@ -355,14 +355,14 @@ After the user responds, say “Hang on a sec while I save that…”
 {
   clientName: "${clientName}",
   phoneNumber: "${phoneNumber}"
-  tag: "Jenna -> found value in event YES"
+  tag: "jenna -> found value in event yes"
 }
 
 → If NO:
 {
   clientName: "${clientName}",
   phoneNumber: "${phoneNumber}"
-  tag: "Jenna -> found value in event NO"
+  tag: "jenna -> found value in event no"
 }
 
 ---
@@ -377,7 +377,7 @@ After the user responds, say “Got it — let me make a note of that…”
 {
   clientName: "${clientName}",
   phoneNumber: "${phoneNumber}"
-  tag: "Jenna -> Event comment: "
+  tag: "jenna -> event comment: "
 }
 
 ---
@@ -392,14 +392,14 @@ After the user responds, say “Thanks — saving your answer now…”
 {
   clientName: "${clientName}",
   phoneNumber: "${phoneNumber}"
-  tag: "Jenna -> will attend again : YES"
+  tag: "jenna -> will attend again : yes"
 }
 
 → If NO:
 {
   clientName: "${clientName}",
   phoneNumber: "${phoneNumber}"
-  tag: "Jenna -> will attend again : NO"
+  tag: "jenna -> will attend again : no"
 }
 
 ---
@@ -441,14 +441,14 @@ After the user responds, say “Perfect — let me lock that in for you…”
 {
   clientName: "${clientName}",
   phoneNumber: "${phoneNumber}"
-  tag: "Jenna -> wants July link"
+  tag: "jenna -> wants july link"
 }
 
 → If NO:
 {
   clientName: "${clientName}",
   phoneNumber: "${phoneNumber}"
-  tag: "Jenna -> no to July link"
+  tag: "jenna -> no to july link"
 }
 
 No problem at all — you can always check artsacrossamerica.org if you’re curious later on.
@@ -477,14 +477,14 @@ After the user responds, say “Great — I’ll get that sent your way…”
 {
   clientName: "${clientName}",
   phoneNumber: "${phoneNumber}"
-  tag: "Jenna -> YES to August Early Bird link"
+  tag: "jenna -> yes to august aarly bird link"
 }
 
 → If NO:
 {
   clientName: "${clientName}",
   phoneNumber: "${phoneNumber}"
-  tag: "Jenna -> NO to August Early Bird link"
+  tag: "jenna -> no to august early bird link"
 }
 
 Totally fine — you can always grab it anytime from artsacrossamerica.org.
