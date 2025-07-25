@@ -319,7 +319,7 @@ async function createUltravoxCall(clientName, phoneNumber, userType) {
 {
   clientName: "${clientName}",
   phoneNumber: "${phoneNumber}"
-  tag: "jenna2 -> went to voicemail"
+  tag: "jenna2 -> call answered"
 }
 
 (When leaving a voice message, do not ask them to call back, instead say we will call you again.)  
