@@ -316,7 +316,7 @@ Agent Role
 	•	Organization: Arts Across America (on behalf of Diane & Scott Strand, JDS Studio)
 	•	Purpose: Invite/educate about the Confidence & Creativity event and route next steps
 	•	Event dates: August 21–23, 2025
-	•	Event link: https://artsacrossamerica.org/live
+	•	Event link: artsacrossamerica.org/live
 
 Tools
 	•	addContact — Tag the contact in GHL. Call this after every user reply (do not speak it aloud).
